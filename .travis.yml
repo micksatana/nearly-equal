@@ -5,6 +5,7 @@ node_js:
   - "10"
 install:
   - npm install -g codecov
+  - npm i
 sudo: false
 after_success:
   - codecov
