@@ -20,6 +20,9 @@ Because 0.1 + 0.2 in many programming language including JavaScript is 0.3000000
 nearlyEqual(0.1 + 0.2, 0.3); // true
 ```
 
+#### Attribution
+["The Floating Point Guide, Comparison"](https://floating-point-gui.de/errors/comparison/) by Michael Borgwardt. TypeScript source code in this repository is followed the logics provided in the article.
+
 ### License
 
 Copyright &copy; 2018 intocode Co., Ltd.
