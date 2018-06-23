@@ -1,5 +1,5 @@
 {
-  "name": "nearly-equal",
+  "name": "@intocode-io/nearly-equal",
   "version": "1.0.0",
   "description": "A function to compare Float without worry about something like 0.1 + 0.2 != 0.3",
   "main": "lib/index.js",
