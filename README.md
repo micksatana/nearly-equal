@@ -4,9 +4,25 @@
 
 ## A function to compare Float without worry about something like 0.1 + 0.2 != 0.3
 
+### Installation
+1. Install in your project
+    ```
+    npm i @intocode-io/nearly-equal
+    ```
+2. Import the code
+
+    ```
+    import nearlyEqual from '@intocode-io/nearly-equal';
+    ```
+    Or
+    ```
+    const nearlyEqual = require('@intocode-io/nearly-equal');
+    ```
+
+
 ### Usage
 #### Problem
-The problem occurs when you try to compare Float
+The problem occurs when you try to compare Float variables
 ```
 0.1 + 0.2 === 0.3 // false
 ```
