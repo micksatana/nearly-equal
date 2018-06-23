@@ -22,4 +22,23 @@ describe('nearlyEqual', () => {
     it('should correctly compare 0 with Number.MIN_VALUE', () => {
         expect(nearlyEqual(0, Number.MIN_VALUE)).toEqual(false);
     });
+    it('should able to compare NaN', () => {
+        expect(nearlyEqual(NaN, NaN)).toEqual(false);
+        expect(nearlyEqual(NaN, 0.0)).toEqual(false);
+        expect(nearlyEqual(-0.0, NaN)).toEqual(false);
+        expect(nearlyEqual(NaN, -0.0)).toEqual(false);
+        expect(nearlyEqual(0.0, NaN)).toEqual(false);
+        expect(nearlyEqual(NaN, Number.POSITIVE_INFINITY)).toEqual(false);
+        expect(nearlyEqual(Number.POSITIVE_INFINITY, NaN)).toEqual(false);
+        expect(nearlyEqual(NaN, Number.NEGATIVE_INFINITY)).toEqual(false);
+        expect(nearlyEqual(Number.NEGATIVE_INFINITY, NaN)).toEqual(false);
+        expect(nearlyEqual(NaN, Number.MAX_VALUE)).toEqual(false);
+        expect(nearlyEqual(Number.MAX_VALUE, NaN)).toEqual(false);
+        expect(nearlyEqual(NaN, -Number.MAX_VALUE)).toEqual(false);
+        expect(nearlyEqual(-Number.MAX_VALUE, NaN)).toEqual(false);
+        expect(nearlyEqual(NaN, Number.MIN_VALUE)).toEqual(false);
+        expect(nearlyEqual(Number.MIN_VALUE, NaN)).toEqual(false);
+        expect(nearlyEqual(NaN, -Number.MIN_VALUE)).toEqual(false);
+        expect(nearlyEqual(-Number.MIN_VALUE, NaN)).toEqual(false);
+    });
 });
