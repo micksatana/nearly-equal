@@ -1,6 +1,10 @@
 # Nearly Equal
-[![Build Status](https://travis-ci.org/intocode-io/nearly-equal.svg?branch=master)](https://travis-ci.org/intocode-io/nearly-equal)
+
+[![Actions status](https://github.com/intocode-io/nearly-equal/workflows/build/badge.svg)](https://github.com/intocode-io/nearly-equal/actions)
 [![codecov](https://codecov.io/gh/intocode-io/nearly-equal/branch/master/graph/badge.svg)](https://codecov.io/gh/intocode-io/nearly-equal)
+[![Version](https://img.shields.io/npm/v/@intocode-io/nearly-equal.svg)](https://npmjs.com/package/@intocode-io/nearly-equal)
+![NPM](https://img.shields.io/npm/l/@intocode-io/nearly-equal)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/micksatana?locale.x=en_GB)
 
 ## A function to compare Float without worry about something like 0.1 + 0.2 != 0.3
 
